@@ -7,26 +7,44 @@ const variableName3 = `Hello Worldkjahskjdfhlkasdf
 akdsfhlkjahsdlkfjh
 asdfkjgahlsdkfhjlksjhdflkhgkj`;
 
-const username = "John";
-console.log(username.length)
-console.log(username.toUpperCase())
-console.log(username.toLowerCase())
+const user = {
+  username: `John`,
+  age: 31,
+  dateOfBirth: "2019-01-01",
+  isMarried: false
+};
 
-const testString = `${username} is ${username.length} characters long`;
-console.log(testString.split(` `));
-console.log(testString.split(` `).length);
+const user2 = {
+  username: `Jane`,
+  age: 20,
+  dateOfBirth: "2019-01-01",
+  isMarried: false,
+}
 
-// Concatenation  
-const welcomeMessage = "Hello " + username + "!";
-const welcomeMessage2 = `Hello ${username}!`;
+const users = [user, user2];
 
-console.log(welcomeMessage);
-console.log(welcomeMessage2);
+console.log(user.age)
+console.log(user2)
 
-const age = 31;
-const message = `${username} is ${age} years old.`;
+console.log(users)
 
-console.log(typeof username)
 
-const dateOfBirth = "2019-01-01";
-const x = 12;
+console.log(`traditional way`)
+for (let i = 0; i < users.length; i++) {
+  console.log(users[i].username);
+}
+
+console.log(`new way`)
+for (let user of users) {
+  console.log(user.username);
+}
+
+const arrayOfNumbers = [4, 5, 6, 9, 10];
+for(let number of arrayOfNumbers) {
+  console.log(number);
+}
+console.log(`---------`)
+for(let numberIndex in arrayOfNumbers) {
+  console.log(arrayOfNumbers[numberIndex]);
+}
+
