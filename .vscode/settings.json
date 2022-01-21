@@ -1,14 +1,12 @@
 {
-  "editor.fontSize": 20,
-  "terminal.integrated.fontSize": 20,
-  "workbench.colorTheme": "Default Light+",
   "slides.folder": "slides",
   "slides.previewMarkdownFiles": true,
   "slides.vscodeSettings": {
     "workbench.colorTheme": "Default Light+",
     "editor.fontFamily": "Dank Mono",
     "terminal.integrated.fontFamily": "Dank Mono",
-    "editor.fontSize": 20
+    "editor.fontSize": 20,
+    "terminal.integrated.fontSize": 20,
   },
   "indentRainbow.colors": [
     "rgba(0,        0,      255,    0.1)",
