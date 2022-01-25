@@ -3,14 +3,32 @@ img {
   border: 1px solid black;
 }
 
-body {
-  background-color: pink;
-}
-
 #assignment {
   color: red;
 }
 
-.title {
-  color: blue;
+.divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.light-mode {
+  background-color: #f0f0f0;
+  color: #212529
+}
+
+.light-mode .title {
+  color: #850000;
+}
+
+.dark-mode {
+  background-color: #212529;
+  color: #f0f0f0
+}
+
+.dark-mode .title {
+  color: #e94949;
 }

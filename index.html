@@ -1,30 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IT3049C</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div>
-    <h1 class="title">IT3049C - Web Game Development</h1>
-    <h2>Assignment 1</h2>
-    <p>
-      lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      <img src="music.png" alt="a stock image about music">
-    </p>
-  </div>
-  <div>
-    <h2 id="assignment">Assignment 2</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      <img src="music.png" alt="a stock image about music">
-    </p>
-  </div>
-  <!-- <script src="script.js"></script> -->
-  <script src="slides/00.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT3049C</title>
+    <!-- Bootstrap Styles -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- Out Custom Styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="light-mode">
+    <section class="container">
+      <h1 class="title">IT3049C - Web Game Development</h1>
+      <div class="divider"></div>
+      <section class="list">
+        <li><a href="google.com">Google</a></li>
+        <li><a href="uc.edu">UC</a></li>
+        <li><a href="uc.instructure.com">Canvas</a></li>
+      </section>
+      <div class="divider"></div>
+      <div id="assignments" class="row">
+        <h2>Assignments</h2>
+        <div class="col" id="assignment1">
+          <h3>Assignment 1: Online Portfolio</h3>
+          <p>
+            Build an online portfolio
+            <br />
+            <img
+              src="web-dev.png"
+              style="height: 200px; width: auto"
+              alt="a stock image about web"
+            />
+          </p>
+        </div>
+        <div class="col" id="assignment2">
+          <h3>Assignment 2: Javascript Exercise</h3>
+          <p>
+            experiment with the Javascript fundamentals
+            <br />
+            <img
+              src="undraw_static_assets_rpm6.png"
+              style="height: 200px; width: auto"
+              alt="a stock image about web dev"
+            />
+          </p>
+        </div>
+        <div class="col" id="assignment3">
+          <h3>Assignment 3: Rock Paper Scissors</h3>
+          <p>
+            Building our first Game
+            <br />
+            <img
+              src="rps.jpeg"
+              style="height: 200px; width: auto"
+              alt="a stock image about RPS"
+            />
+          </p>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <section id="insert-here">
+        <h2>Insert new elements here</h2>
+      </section>
+      <div class="divider"></div>
+      <section>
+        <h3>Welcome to this page!</h3>
+        <div class="mb-3">
+          <label for="username" class="form-label">Email address</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Please Enter your name"
+            id="username"
+          />
+        </div>
+      </section>
+      <div class="divider"></div>
+      <section>
+        <div>
+          <button type="button" class="btn btn-danger" id="dark-mode-toggle">
+            Dark Mode Toggle
+          </button>
+        </div>
+      </section>
+      <div class="divider"></div>
+    </div>
 
-</body>
+    <!-- Out Custom Scripts -->
+    <script src="slides/00.js"></script>
+  </body>
 </html>
