@@ -21,7 +21,7 @@ img {
 }
 
 .light-mode .title {
-  color: #850000;
+  color: #3e08d3;
 }
 
 .dark-mode {
@@ -32,3 +32,13 @@ img {
 .dark-mode .title {
   color: #e94949;
 }
+
+/* 
+.container .something { // .container is a parent of .something
+  background-color: #f0f0f0;
+}
+
+.container > .something { // .container is the direct parent of .something
+  background-color: #f0f0f0;
+} 
+*/
