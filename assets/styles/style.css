@@ -33,6 +33,10 @@ img {
   color: #e94949;
 }
 
+#make-it-blue {
+  color: blue;
+}
+
 /* 
 .container .something { // .container is a parent of .something
   background-color: #f0f0f0;
