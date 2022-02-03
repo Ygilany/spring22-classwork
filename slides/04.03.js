@@ -1,8 +1,3 @@
-# Web API - `localStorage`
-## Ideas for usage
-* storing data that is not likely to change over session.
-* Theme choice (light/dark) mode
-```js
 function setStyles() {
   var currentColor = localStorage.getItem('bgcolor');
   var currentFont = localStorage.getItem('font');
@@ -24,8 +19,3 @@ function populateStorage() {
 
   setStyles();
 }
-```
-
-## Side
-* Review the storage in the browser
-* Storage have limits ~50 MB.
