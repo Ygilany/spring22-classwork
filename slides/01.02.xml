@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <name>Yahya</name>
+  <isInstructor>true</isInstructor>
+  <courses>
+    <code>IT3049C</code>
+    <name>Web Game Developement</name>
+  </courses>
+  <courses>
+    <code>IT2045C</code>
+    <name>Computer Programming II</name>
+  </courses>
+  <courses>
+    <code>IT50XX</code>
+    <name>Senior Design</name>
+  </courses>
+</root>
