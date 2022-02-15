@@ -1,1 +1,14 @@
-{}
+{
+  "name": "Yahya",
+  "isInstructor": true,
+  "courses": [
+    {
+      "code": "IT3049C",
+      "name": "Web Game Development"
+    },
+    {
+      "code": "IT2045C",
+      "name": "Computer Programming II"
+    }
+  ]
+}
