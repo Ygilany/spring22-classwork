@@ -5,7 +5,7 @@
     "workbench.colorTheme": "Default Light+",
     "editor.fontFamily": "Dank Mono",
     "terminal.integrated.fontFamily": "Dank Mono",
-    "editor.fontSize": 20,
+    "editor.fontSize": 24,
     "terminal.integrated.fontSize": 20,
   },
   "indentRainbow.colors": [
