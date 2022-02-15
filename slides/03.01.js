@@ -1,3 +1,5 @@
+const preElement =document.getElementById(`result`);
+
 // 🐨: Make an HTTP Request using `XMLHttpRequest`
 const request = new XMLHttpRequest();
 console.log(request.readyState)
@@ -9,11 +11,28 @@ console.log(request.readyState)
 // 📜: ReadyStates: https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/readyState
 request.onreadystatechange = function() {
   console.log(request.readyState);
+  if (request.readyState !== request.DONE){return;}
+  if(request.status !== 200){
+    console.log(`Error: ${request.status}`);
+    return;
+  }
+  if(request.readyState === request.DONE && request.status === 200) {
+    console.log( request.responseText);
+    const response = JSON.parse(request.responseText);
+    preElement.innerText = response[0].text; 
+  }
+
 }
+console.log(`test`)
+console.log(`test1`)
+
 
 // 🐨: Open the request with the `GET` method
 request.open('GET', 'https://it3049c-chat-application.herokuapp.com/messages');
 request.send();
+
+console.log(`test2`)
+console.log(`test3`)
 
 // 🐨: Update the `onstatechange` event listener
 // if request is not done, ignore and wait for the next state change
