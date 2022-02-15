@@ -6,11 +6,20 @@ function modeToggle() {
   document.body.classList.toggle('light-mode');
   
   if (document.body.classList.contains('dark-mode')) {
+    sessionStorage.setItem(`mode`, `dark`);
     modeToggleButton.innerText = 'Toggle to Light Mode';
   } else {
+    sessionStorage.setItem(`mode`, `light`);
     modeToggleButton.innerText = 'Toggle to Dark Mode';
   }
 
   modeToggleButton.classList.toggle(`btn-danger`);
   modeToggleButton.classList.toggle(`btn-primary`);
 }
+
+window.addEventListener(`load`, function() {
+  if (sessionStorage.getItem(`mode`) === `dark`) {
+    console.log(`call function`) 
+    modeToggle();
+  }
+})
