@@ -2,6 +2,8 @@
   "slides.folder": "slides",
   "slides.previewMarkdownFiles": true,
   "slides.vscodeSettings": {
+    "editor.inlayHints.enabled": false,
+    "github.copilot.inlineSuggest.enable": false,
     "workbench.colorTheme": "Default Light+",
     "editor.fontFamily": "Dank Mono",
     "terminal.integrated.fontFamily": "Dank Mono",
