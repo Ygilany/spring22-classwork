@@ -1,60 +1,49 @@
-const title = document.querySelector('.title');
-title.textContent = 'Hello World';
+// 🦉: Create Variables with references to the elements
+const newTodo = document.getElementById(`new-todo`);
+const todoList = document.getElementById(`todo-list`);
+const todoCounter = document.querySelector(`.todo-count`);
 
-const list = document.querySelector(`.list`)
-list.innerHTML = `
-  <p>Hello IT3049C</p>
-`;
+// -----------------------------------------------------------------------------
 
-const insertSection = document.getElementById('insert-here');
-const paragraph1ToBeInserted = document.createElement('p');
-const paragraph2ToBeInserted = document.createElement('p');
+// 🦉: Create a function that creates and appends a list item to your todo list 
+function addTodoToList(todo) {
+  // Create an new List Item
+  
+  // Modify the InnerHTML of the List Item
 
-paragraph1ToBeInserted.textContent = 'Hello IT3049C';
-paragraph2ToBeInserted.textContent = 'Second paragraph';
-paragraph1ToBeInserted.id = "make-it-blue";
-paragraph1ToBeInserted.style.fontWeight = 'bold';
-
-insertSection.appendChild(paragraph1ToBeInserted);
-insertSection.appendChild(paragraph2ToBeInserted);
-
-// insertSection.removeChild(paragraph2ToBeInserted);
-
-
-
-const darkModeToggleButton = document.getElementById('dark-mode-toggle');
-darkModeToggleButton.addEventListener(`click`, toggleDarkMode );
-
-const lightModeToggleButton = document.getElementById('light-mode-toggle');
-lightModeToggleButton.addEventListener(`click`, toggleLightMode );
-
-function toggleDarkMode() {
-  document.body.classList.add('dark-mode');
-  document.body.classList.remove('light-mode');
-  darkModeToggleButton.classList.add(`d-none`);
-  lightModeToggleButton.classList.remove(`d-none`);
-}
-function toggleLightMode() {
-  document.body.classList.remove('dark-mode');
-  document.body.classList.add('light-mode');
-  darkModeToggleButton.classList.remove(`d-none`);
-  lightModeToggleButton.classList.add(`d-none`);
+  // Append the List Item to the Todo List
 }
 
+// 🦉: Don't forget to call the function
 
-const modeToggleButton = document.getElementById('mode-toggle');
-modeToggleButton.addEventListener(`mouseenter`, modeToggle );
+// -----------------------------------------------------------------------------
 
-function modeToggle() {
-  document.body.classList.toggle('dark-mode');
-  document.body.classList.toggle('light-mode');
-
-  if (document.body.classList.contains('dark-mode')) {
-    modeToggleButton.textContent = 'Light Mode';
-  } else {
-    modeToggleButton.textContent = 'Dark Mode';
+// 🦉: Add an Event Listeners to the new-todo input
+// If the user presses the enter key, call the addTodoToList function
+newTodo.addEventListener(`keyup`, function(event) {
+  console.log(event.key);
+  if(event.key === `Enter`) {
+    const todo = newTodo.value;
+    newTodo.value = ``;
+    addTodoToList(todo);
   }
+});
 
-  modeToggleButton.classList.toggle(`btn-danger`);
-  modeToggleButton.classList.toggle(`btn-primary`);
+// -----------------------------------------------------------------------------
+
+function markCompleted(event) {
+  // TODO: Find the correct parentNode.
+  const todo = event.target;
+  todo.classList.toggle(`completed`);
+  calculateNumberOfTodos();
+}
+
+// -----------------------------------------------------------------------------
+
+function calculateNumberOfTodos () {
+  const allTodos = todoList.getElementsByTagName(`li`).length;
+  const completedTodos = todoList.querySelectorAll(`.completed`).length;
+  const remainingTodos = allTodos - completedTodos;
+
+  todoCounter.innerText = `${remainingTodos} items left out of ${allTodos}`;
 }
