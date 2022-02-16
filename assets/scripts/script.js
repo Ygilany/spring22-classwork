@@ -1,9 +1,6 @@
 // 🦉: Create Variables with references to the elements
-const newTodo = document.getElementById(`new-todo`);
-const todoList = document.getElementById(`todo-list`);
-const todoCounter = document.querySelector(`.todo-count`);
-
-// -----------------------------------------------------------------------------
+const newTodoItem = document.getElementById(`new-todo-item`);
+// ------------------------------------------------------------------
 
 // 🦉: Create a function that creates and appends a list item to your todo list 
 function addTodoToList(todo) {
@@ -14,9 +11,7 @@ function addTodoToList(todo) {
   // Append the List Item to the Todo List
 }
 
-// 🦉: Don't forget to call the function
-
-// -----------------------------------------------------------------------------
+// ------------------------------------------------------------------
 
 // 🦉: Add an Event Listeners to the new-todo input
 // If the user presses the enter key, call the addTodoToList function
@@ -29,7 +24,7 @@ newTodo.addEventListener(`keyup`, function(event) {
   }
 });
 
-// -----------------------------------------------------------------------------
+// ------------------------------------------------------------------
 
 function markCompleted(event) {
   // TODO: Find the correct parentNode.

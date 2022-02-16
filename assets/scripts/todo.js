@@ -3,8 +3,8 @@ const newTodo = document.getElementById(`new-todo`);
 const todoList = document.getElementById(`todo-list`);
 const todoCounter = document.querySelector(`.todo-count`);
 
+
 newTodo.addEventListener(`keyup`, function(event) {
-  console.log(event.key);
   if(event.key === `Enter`) {
     const todo = newTodo.value;
     newTodo.value = ``;
@@ -26,11 +26,12 @@ function addTodoToList(todo) {
   calculateNumberOfTodos();
 }
 
-addTodoToList(`Meet with the Dean`);
-addTodoToList(`Meet with Hazem`);
+
+addTodoToList(`Meet with the Dean!`);
 addTodoToList(`Meet with the search Committee`);
+addTodoToList(`Meet with Hazem`);
 addTodoToList(`Give a presentation`);
-// addTodoToList(`Get Hired!`);
+addTodoToList(`Get Hired!`);
 
 function markCompleted(event) {
   const todo = event.target.parentNode.parentNode;

@@ -1,11 +1,13 @@
 {
+  "markdown.preview.fontSize": 30,
   "slides.folder": "slides",
   "slides.previewMarkdownFiles": true,
   "slides.vscodeSettings": {
     "workbench.colorTheme": "Default Light+",
     "editor.fontFamily": "Dank Mono",
     "terminal.integrated.fontFamily": "Dank Mono",
-    "editor.fontSize": 20,
+    "editor.fontSize": 24,
+    "markdown.preview.fontSize": 30,
     "terminal.integrated.fontSize": 20,
   },
   "indentRainbow.colors": [
