@@ -1,0 +1,23 @@
+h2 {
+  color: $primary_color;
+}
+
+
+.main-heading {
+  font-family: Tahoma, Geneva, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: $primary_color;
+}
+
+.secondary-heading {
+  @extend .main-heading;
+  font-size: 16px;
+  color: $secondary_color;
+}
+
+.secondary-heading:hover {
+  color: $callout_color;
+}
+

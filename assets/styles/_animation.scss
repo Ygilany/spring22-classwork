@@ -1,0 +1,18 @@
+@keyframes sliding {
+  0% {
+    margin-left: 100%;
+    opacity: 0;
+    color: red;
+  }
+
+  100% {
+    margin-left: 0%;
+    width: 100%;
+    opacity: 1;
+    color: blue
+  }
+}
+
+p {
+  animation: sliding 3s;
+}
