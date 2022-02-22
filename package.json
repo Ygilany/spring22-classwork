@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "compile:styles": "sass assets/styles/style.scss assets/styles/main.css",
+    "compile:styles:dev": "sass assets/styles/style.scss assets/styles/main.css -w"
+  },
   "dependencies": {
     "sass": "^1.49.8"
   }
