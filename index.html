@@ -1,34 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Sample Lecture from IT3049C</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT3049C</title>
+    <!-- Bootstrap Styles -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <!-- Out Custom Styles -->
-    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="assets/styles/main.css" />
   </head>
-  <body>
-    <article class="earth-demo">
-      <div class="earth">
-        <div class="more-info">
-          <h1>Earth</h1>
-          <ul>
-            <li>Third planet from the Sun</li>
-            <li>Atmosphere: 21% oxygen</li>
-            <li>Liquid water on surface</li>
-            <li>Only planet that has life (that we know of)</li>
-          </ul>
+  <body class="light-mode">
+    <div class="container-fluid">
+      <section>
+        <h2>Welcome to this page!</h2>
+        <div class="mb-3">
+          <label for="username" class="form-label">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Please Enter your name"
+            id="username"
+          />
         </div>
-        <img src="https://cssanimation.rocks/images/random/earth.png">
-      </div>
-      <div class="moon-container">
-        <div class="moon">
-          <img src="https://cssanimation.rocks/images/random/moon.png">
-        </div>
-      </div>
-    </article>
+      </section>
+      <div class="divider"></div>
+      
+      <section>
+        <h3>This is a paragraph</h3>
+        <p>
+          lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam doloremque quia quod quae quaerat dolore dolorem dolorum voluptatem, quibusdam, quisquam quis, quidem quisquam. Quisquam, quidem. 
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam doloremque quia quod quae quaerat dolore dolorum voluptatem, quibusdam, quisquam quis, quidem quisquam. Quisquam, quidem.
+        </p>
+      </section>
+  
+      <div class="divider"></div>
+      <section>
+        <canvas id="my-canvas"></canvas>
+      </section>
+    </div>
 
     <!-- Out Custom Scripts -->
-    <!-- <script src="assets/scripts/script.js"></script> -->
-    <script src="assets/scripts/todo.js"></script>
-
+    <script src="assets/scripts/script.js"></script>
   </body>
 </html>

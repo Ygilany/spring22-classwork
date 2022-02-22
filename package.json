@@ -4,6 +4,7 @@
     "compile:styles:dev": "sass assets/styles/style.scss assets/styles/main.css -w"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "sass": "^1.49.8"
   }
 }
