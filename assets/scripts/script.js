@@ -1,1 +1,0 @@
-// All scripts should be in the slides folder
