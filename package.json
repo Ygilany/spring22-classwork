@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
+  },
   "dependencies": {
     "jest": "^27.5.1",
     "phaser": "^3.55.2",

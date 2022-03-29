@@ -16,4 +16,6 @@
     "rgba(255,      127,    0,      0.1)",
     "rgba(255,      0,      0,      0.1)"
   ],
+  "jest.enableCodeLens": false,
+  "jest.disabledWorkspaceFolders": ["cypress"]
 }
