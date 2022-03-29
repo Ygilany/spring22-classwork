@@ -4,6 +4,7 @@
     "cy:run": "cypress run"
   },
   "dependencies": {
+    "cypress": "^9.5.3",
     "jest": "^27.5.1",
     "phaser": "^3.55.2",
     "webpack": "^5.70.0",
