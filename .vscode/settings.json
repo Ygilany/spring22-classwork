@@ -1,4 +1,21 @@
 {
   "editor.fontSize": 14,
-  "terminal.integrated.fontSize": 14
+  "terminal.integrated.fontSize": 14,
+  "slides.folder": "slides",
+  "slides.previewMarkdownFiles": true,
+  "slides.vscodeSettings": {
+    "editor.inlayHints.enabled": false,
+    "github.copilot.inlineSuggest.enable": false,
+    "workbench.colorTheme": "Default Light+",
+    "editor.fontFamily": "Dank Mono",
+    "terminal.integrated.fontFamily": "Dank Mono",
+    "editor.fontSize": 20,
+    "terminal.integrated.fontSize": 20,
+  },
+  "indentRainbow.colors": [
+    "rgba(0,        0,      255,    0.1)",
+    "rgba(0,        255,    0,      0.1)",
+    "rgba(255,      127,    0,      0.1)",
+    "rgba(255,      0,      0,      0.1)"
+  ],
 }
