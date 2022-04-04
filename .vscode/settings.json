@@ -1,5 +1,6 @@
 {
   "editor.fontSize": 14,
+  "editor.tabSize": 2,
   "terminal.integrated.fontSize": 14,
   "slides.folder": "slides",
   "slides.previewMarkdownFiles": true,
@@ -18,4 +19,7 @@
     "rgba(255,      127,    0,      0.1)",
     "rgba(255,      0,      0,      0.1)"
   ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }
